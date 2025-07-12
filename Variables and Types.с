@@ -1,0 +1,63 @@
+#include <stdio.h>
+#include <stdbool.h>
+#include <string.h>
+
+int main(void) {
+    // Character types
+    char charVar = 'A';
+    signed char sCharVar = -65;
+    unsigned char uCharVar = 200;
+
+    // Integer types
+    short shortVar = -12345;
+    unsigned short uShortVar = 54321;
+
+    int intVar = -123456789;
+    unsigned int uIntVar = 123456789U;
+
+    long longVar = -1234567890L;
+    unsigned long uLongVar = 1234567890UL;
+
+    long long longLongVar = -123456789012345LL;
+    unsigned long long uLongLongVar = 123456789012345ULL;
+
+    // Floating point types
+    float floatVar = 3.14f;
+    double doubleVar = 2.718281828;
+    long double longDoubleVar = 1.61803398875L;
+
+    // Boolean type
+    bool boolVarTrue = true;
+    bool boolVarFalse = false;
+
+    // Line
+    char strVar[] = "Hello, world!";
+
+    // Conclusion
+    printf("charVar: %c (%d)\n", charVar, charVar);
+    printf("sCharVar: %c (%d)\n", sCharVar, sCharVar);
+    printf("uCharVar: %c (%u)\n", uCharVar, uCharVar);
+
+    printf("shortVar: %hd\n", shortVar);
+    printf("uShortVar: %hu\n", uShortVar);
+
+    printf("intVar: %d\n", intVar);
+    printf("uIntVar: %u\n", uIntVar);
+
+    printf("longVar: %ld\n", longVar);
+    printf("uLongVar: %lu\n", uLongVar);
+
+    printf("longLongVar: %lld\n", longLongVar);
+    printf("uLongLongVar: %llu\n", uLongLongVar);
+
+    printf("floatVar: %.2f\n", floatVar);
+    printf("doubleVar: %.6f\n", doubleVar);
+    printf("longDoubleVar: %.10Lf\n", longDoubleVar);
+
+    printf("boolVarTrue: %s\n", boolVarTrue ? "true" : "false");
+    printf("boolVarFalse: %s\n", boolVarFalse ? "true" : "false");
+
+    printf("strVar: %s\n", strVar);
+
+    return 0;
+}
